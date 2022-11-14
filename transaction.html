@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- ************ -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="bank.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 ">
+        <div class="container-fluid">
+            <span class="navbar-brand">
+                <img src="bank2.png" alt="GOG" height="51" width="265">
+            </span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto  ">
+                   
+                    <li class="nav-item">
+                        <a class="nav-link hactive nohoverh" href="transaction.html">Manage Transactions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="balance.html">Check Balance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Log Out</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="newsection">
+        <!-- <div class="imgb">
+            <img src="rl.jpg" alt="">
+        </div> -->
+
+        <div class="content">
+            <div class="form">
+                <h2>Manage Transactions</h2>
+
+                <form action="">
+                    <div class="ibox">
+                        <label for="">Account Number</label>
+                        <input type="text" name="ano" id="ano" placeholder="Account Number Here...">
+                    </div>
+                    <div class="ibox">
+                        <label for="">Pin</label>
+                        <input type="password" id="pin" name="pin" placeholder="Pin Here...">
+                    </div>
+                    <div class="ibox">
+                        <label for="">Amount</label>
+                        <input type="number" id="amt" name="amt" placeholder="Amount Here...">
+                    </div>
+                    <div class="fp">
+                        <p>Forgot Pin? <a href="#"> &nbsp;Reset Here</a></p>
+                    </div>
+                    <div class="ibox">
+                        <button type="button" value="Deposit" name="deposit" class="loginbtn"
+                            onclick="Bank.deposit()">Deposit</button>
+
+                    </div>
+                    <div class="ibox">
+                        <button type="button" value="Withdraw" name="withdraw" class="loginbtn"
+                            onclick="Bank.withdraw()">Withdraw</button>
+
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h1> <span class="fbig">GOG </span> <span class="fsmall">bank</span> </h1>
+
+                </div>
+                <div class="footer-col">
+                    <h4>About us</h4>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">News & Events</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Need help</h4>
+                    <ul>
+                        <li><a href="#">We Care For You</a></li>
+                        <li><a href="#">FAQs </a></li>
+                        <li><a href="#">Customer Care</a></li>
+                        <li><a href="#">Contact Us</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+</body>
+
+</html>
