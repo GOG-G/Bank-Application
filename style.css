@@ -167,9 +167,30 @@ body span.b {
 
   .home .im img{
     width: auto;
-    height: 300px;
+    height: 250px;
+  }
+
+  .head{
+    height: 60vh;
+    
+
+  }
+  .blockquote-footer{
+    font-size: larger;
+    text-wrap: balance;
+    width: 80%;
+
+  }
+}
+
+@media screen and (max-width:550px) {
+
+  .home .im img{
+    width: auto;
+    height: 200px;
     
   }
+
 }
 
 @media (min-width:1200px){
